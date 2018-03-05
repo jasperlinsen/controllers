@@ -1,6 +1,8 @@
 AnimationFrameController
 ------------------------
-Stack call for requestAnimationFrame.
+Stack call for requestAnimationFrame. It is an instance of `AnimationFrameControllerGroup`.
+
+_** Note ** Due to backwards compatibility, `AnimationFrameControllerGroup` is currently not a constructor. In the future it should be an extension of the `Map` object, but since that can't be transpiled (`Map` is a class that can only be called with `new`, not `call`) it currently creates a map and returns it. In the future this will either morph into `new AF.Group` or `AF.Group = () =>  new AnimationFrameControllerGroup`._
 
 Methods
 -------
@@ -11,7 +13,9 @@ Adds the handler to the stack and calls it every frame with the following parame
 
 - `@param delta:Number` The amount of milliseconds since the last frame.
 - `@param progress:Number` The amount of milliseconds this handler has been active in the AF since it was added.
-- `@param time:Number` The total amount of milliseconds the AnimationFrame has been active. If the return value of the handler is `FALSE`, the handler will be removed from the stack. If a callback has been set, it also needs to return `FALSE` to remove the handler from the stack.
+- `@param time:Number` The total amount of milliseconds the AnimationFrame has been active. 
+
+If the return value of the handler is `false`, the handler will be removed from the stack. If a callback has been set, it also needs to return `false` to remove the handler from the stack.
 
 	@method remove( handler:Function ) -> Function
 
