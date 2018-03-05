@@ -1,0 +1,20 @@
+{
+  "name": "controllers",
+  "version": "1.0.0",
+  "description": "A bunch of useful controller elements in Javascript for controlling several commonly used functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasperlinsen/controllers.git"
+  },
+  "author": "Jasper Linsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasperlinsen/controllers/issues"
+  },
+  "homepage": "https://github.com/jasperlinsen/controllers#readme",
+  "devDependencies": {}
+}
