@@ -2,8 +2,6 @@ AnimationFrameController
 ------------------------
 Stack call for requestAnimationFrame. It is an instance of `AnimationFrameControllerGroup`.
 
-**NOTE** _Due to backwards compatibility, `AnimationFrameControllerGroup` is currently not a constructor. In the future it should be an extension of the `Map` object, but since that can't be transpiled (`Map` is a class that can only be called with `new`, not `call`) it currently creates a map and returns it. In the future this will either morph into `new AF.Group` or `AF.Group = () =>  new AnimationFrameControllerGroup`._
-
 Methods
 -------
 
@@ -24,6 +22,8 @@ Removes the handler from the stack.
 	@method Group -> AnimationFrameControllerGroup
 
 Returns a group that can be passed as one consecutive executing group. The whole AnimationFrameController is already an instance of this group with the only difference being that the root group is actually being initially called by the requestAnimationFrame function.
+
+**NOTE** _Due to backwards compatibility, `AnimationFrameControllerGroup` is currently not a constructor. In the future this will either morph into `new AF.Group` or `AF.Group = () =>  new AnimationFrameControllerGroup`. For more info, see 'Note on Backwards Compatibility' at the root of this repository._
 
 Getter/Setter
 -------------

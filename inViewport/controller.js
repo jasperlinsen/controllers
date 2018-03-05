@@ -1,15 +1,7 @@
-const ETC = require( './_eventThrottleController.js' );
-const BCC = require( './_boundingClientRectController.js' );
-/*
- * inViewportController
- * -----------------------
- * Adds passed classes to element if in viewport
- *
- * @method set( element:HTMLElement, classNames:Array[ String, ...] ) -> Void
- * Add element to viewport checker
- *
- */
- module.exports = function(){
+const ETC = require( '../eventThrottle/controller.js' );
+const BCC = require( '../boundingClientRect/controller.js' );
+
+module.exports = function(){
 	
 	var controller = new Map;
 	
