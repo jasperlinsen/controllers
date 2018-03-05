@@ -1,6 +1,6 @@
 const AFC = require( '../animationFrame/controller.js' );
 
- module.exports = function(){
+module.exports = function(){
 	
 	function inViewportCheck( delta ){
 		

@@ -2,8 +2,7 @@ AnimationFrameController
 ------------------------
 Stack call for requestAnimationFrame. It is an instance of `AnimationFrameControllerGroup`.
 
-Methods
--------
+### Methods
 
 	@method add( handler:Function, callback:Function ) -> Function
 
@@ -25,8 +24,7 @@ Returns a group that can be passed as one consecutive executing group. The whole
 
 **NOTE** _Due to backwards compatibility, `AnimationFrameControllerGroup` is currently not a constructor. In the future this will either morph into `new AF.Group` or `AF.Group = () =>  new AnimationFrameControllerGroup`. For more info, see 'Note on Backwards Compatibility' at the root of this repository._
 
-Getter/Setter
--------------
+### Getter/Setter
 
 	@getter paused:Bool
 	@setter paused:Bool

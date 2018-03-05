@@ -3,7 +3,7 @@ BoundingClientRectController
 Recalculates the DOMRect of an element if the AnimationFrameController.time has changed.
 Otherwise it returns the already computed DOMRect.
 
-## Methods
+### Methods
 
 	@method get( element:HTMLElement ) -> DOMRect
 

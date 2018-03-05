@@ -1,7 +1,9 @@
 EventThrottleController
 -----------------------
 
-Throttle Events to the Animation Frame, so firing is limited.
+Throttle Events to the Animation Frame, so firing rates are limited.
+
+### Methods
 
 	@method add( object:HTMLElement, event:String, handler:Function[, throttle:Number = 0 ] ) -> Void
 

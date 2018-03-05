@@ -1,6 +1,8 @@
 inViewportController
 --------------------
 
+### Methods
+
 Adds passed classes to element if in viewport
 
 	@method set( element:HTMLElement, classNames:Array[ String, ... ] ) -> Void
