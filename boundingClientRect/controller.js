@@ -1,22 +1,5 @@
-const AFC = require( './_animationFrameController.js' );
-/*
- * BoundingClientRectController
- * -----------------------
- * Recalculates the DOMRect of an element if the AnimationFrameController.time has changed.
- * Otherwise it returns the already computed DOMRect.
- *
- * @method get( element:HTMLElement ) -> DOMRect
- * Get the BoundingClientRect of the element.
- * Additions to the BoundingClientRect:
- * * @value inViewport:Bool
- * * Boolean with information of whether the element is in the viewport or not.
- * * @value time:Number
- * * Number that matches the last time the DOMRect 
- * * was computed using AnimationFrameController.time
- *
- * @method overlaps( element1:HTMLElement, element2:HTMLElement ) -> Bool
- * Returns whether both elements overlap in any way. 
- */
+const AFC = require( '../animationFrame/controller.js' );
+
 module.exports = function(){
 	
 	var empty = () => {};
