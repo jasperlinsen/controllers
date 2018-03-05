@@ -2,7 +2,7 @@ AnimationFrameController
 ------------------------
 Stack call for requestAnimationFrame. It is an instance of `AnimationFrameControllerGroup`.
 
-_** Note ** Due to backwards compatibility, `AnimationFrameControllerGroup` is currently not a constructor. In the future it should be an extension of the `Map` object, but since that can't be transpiled (`Map` is a class that can only be called with `new`, not `call`) it currently creates a map and returns it. In the future this will either morph into `new AF.Group` or `AF.Group = () =>  new AnimationFrameControllerGroup`._
+**NOTE** _Due to backwards compatibility, `AnimationFrameControllerGroup` is currently not a constructor. In the future it should be an extension of the `Map` object, but since that can't be transpiled (`Map` is a class that can only be called with `new`, not `call`) it currently creates a map and returns it. In the future this will either morph into `new AF.Group` or `AF.Group = () =>  new AnimationFrameControllerGroup`._
 
 Methods
 -------
